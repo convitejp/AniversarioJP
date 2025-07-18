@@ -1,0 +1,85 @@
+/* Remove margem entre header e contador */
+.header-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Remover borda dos cards e ajustar altura */
+.card-fixo {
+  height: 400px;
+  border: none !important; /* remove linha */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opcional: sombra leve */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Imagem dos cards */
+.card-fixo .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  
+}
+
+/* Centralizar título */
+.card-title {
+  text-align: center;
+}
+
+/* Contador */
+.contador-container {
+  text-align: center;
+  background-color: #a0c1d8;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Itens do contador */
+.contador {
+  font-size: 1.5em; /* padrão para telas médias e grandes */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+
+}
+
+@media (max-width: 576px) {
+  .contador {
+    font-size: 1em; /* fonte menor em telas pequenas */
+  }
+}
+
+/* Garantir espaço lateral nos cards */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.mapa-section {
+  background-color: #a0c1d8;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-section h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
